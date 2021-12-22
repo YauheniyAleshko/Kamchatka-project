@@ -1,0 +1,784 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  color:#121212;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 7.5rem;
+}
+
+h4{
+  font-size: 40px;
+  color:#FFFFFF;
+}
+
+h5{
+  font-size: 36px;
+}
+
+header{
+  background-image:url(../images/head-fone.png);
+  
+}
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head{
+  display: flex;
+  padding-top: 2.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head__wrap{
+  display: flex;
+}
+
+.nav ul{
+  display: flex;
+  list-style: none;
+  margin-right: 4rem;
+}
+
+.nav li:not(:last-child){
+  margin-right: 3.5rem;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #275553;
+}
+
+.reserve{
+  border:1px solid #275553;
+  border-radius: 5px;
+  padding: 0.625rem 2rem;
+  color:#275553;
+  text-decoration: none;
+}
+
+.top{
+  color:#FFFFFF;
+  margin-top: 5.625rem;
+  margin-bottom: 2.1875rem;
+  max-width: 37.5rem;
+}
+
+.date{
+  color:#FFFFFF ;
+  font-size: 1.875rem;
+  background-color: #F47648;
+  border-radius: 5px;
+  padding: 0.625rem 1.5rem;
+}
+
+header p{
+  margin-top:4rem;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  max-width: 24rem;
+  margin-bottom: 2.375rem;
+}
+
+.timetable{
+  color: #FFFFFF;
+  
+}
+
+.head__arrow{
+  margin-left:2.3125rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 1.5625rem;
+  padding:0.625rem;
+  height: 0.625rem;
+}
+
+.wrap__time{
+  display: flex;
+  align-items: center;
+}
+
+.icons{
+  margin-top: 10.625rem;
+  padding-bottom: 4.375rem;
+}
+
+.insta{
+  margin-left: 1.875rem;
+}
+
+.start__travel{
+  max-width: 45.5rem;
+  margin-bottom:1.6875rem;
+}
+
+.one__two_dream{
+  font-size: 1.5rem;
+  color: #313131;
+  max-width: 33.125rem;
+}
+
+.one__two_route{
+  color: #313131;
+  margin-top: 2.1875rem;
+  max-width: 38.3125rem;
+}
+
+.info__tour{
+  display: flex;
+  margin-top:4rem;
+}
+
+.info__group:not(:last-child){
+  margin-right: 4rem;
+}
+
+.info__group_type{
+  font-size: 0.875rem;
+  color: #212121;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.info__group_descrip{
+  color: #212121;
+  font-weight: 700;
+}
+
+.camcha{
+  font-weight: 600;
+  font-size: 24px;
+  /*color:#FFFFFF;*/
+  max-width: 662px;
+  margin-top: 380px;
+}
+
+.comment{
+  color: #DEDEDE;
+  margin-top: 2rem;
+  max-width: 300px;
+  margin-bottom: 13px;
+}
+
+.maxim{
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.one__two{
+ background-image:url(../images/oblachka_pod_gory.png),url(../images/podlogka_pod_oblachka.png),url(../images/gora.png),url(../images/plane.png),url(../images/cloud_054\ 29.png),url(../images/oblaka.png),url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
+ background-repeat: no-repeat;
+ background-position:100% 2030px,100% 2350px,100% 2070px,100% 500px,-84px 1903px,0px 1780px,0 580px,0 1250px,0px 1200px,-195px 280px;
+}
+ 
+
+
+.day_one{
+  margin-top: 212px;
+  max-width: 458px;
+}
+
+.day__color{
+  color: #F47648;
+}
+
+.program{
+  max-width: 461px;
+  margin-top: 48px;
+  color:#ACACAC;
+}
+
+.program p:not(:first-child){
+  margin-top: 20px;
+}
+
+.white{
+  font-weight: 600;
+  color:#FFFFFF;
+}
+
+.day_two{
+  max-width: 856px;
+  margin-top: 300px;
+  color: #313131;
+  max-width: 856px;
+
+}
+
+.program2{
+  max-width: 548px;
+  margin-top: 48px;
+  color: #313131;
+}
+
+.program2 p:not(:first-child){
+  margin-top: 20px;
+}
+
+.one__the_way{
+  background-color: #F1F1F1;
+  padding: 80px 0;
+}
+
+.cards__route{
+  display: flex;
+  margin-top: 48px;
+}
+
+.card{
+  max-width:calc(25% - 32px);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+  width: 100%;
+}
+
+.card:not(:last-child){
+  margin-right: 32px;
+}
+
+.card__head{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.card p{
+  padding: 0 24px 28px 24px;
+  line-height: 24px;
+}
+
+.day_three{
+  color: #313131;
+  margin-bottom: 48px;
+}  
+
+.wrapper__days{
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.wrap__right{
+  max-width: 505px;
+  margin-right: 133px;
+}
+
+.wrap__right p{
+  color: #212121;
+}
+
+.wrap__right p:not(:last-child),.wrap__left p:not(:last-child){
+  margin-bottom: 40px;
+}
+
+.wrapper__days_reserv{
+  margin-top: 390px;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+  color: white;
+}
+
+.wrap__left{
+  max-width: 533px;
+  margin-left: 100px;
+}
+
+._3rd__to_7th{
+  background-image: url(../images/oblakaSevenverh.png),url(../images/podlogka_podOblakaSevenVerh.png),url(../images/skaly_niz.png),url(../images/skaly_verh.png),url(../images/skalyDay5.png),url(../images/black_fone3day.png),url(../images/day3niz.png),url(../images/gory-den_three.png);
+  background-repeat: no-repeat;
+  background-position:0 2770px,0 2870px,0 1900px,0 1400px,0 1400px,0 780px ,0 611px,0px 270px;
+}
+
+.day_four{
+  margin-bottom: 48px;
+}
+
+.five{
+  margin-top:222px;
+}
+
+.five p{
+  color:white;
+}
+
+.littleMarg{
+  margin-top: 191px;
+}
+
+.days{
+  margin-top: 35px;
+  color: #FFFFFF;
+  margin-left: 100px;
+  border-collapse: collapse;
+}
+
+.days caption{
+  text-align: start;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.days tr,.days2 tr{
+  border-bottom:1px solid #BABABA;
+}
+
+.days td,.days2 td{
+  max-width: 233px;
+}
+
+.first,.td_bold{
+  padding-right: 150px;
+}
+
+.text{
+  padding:15px 0;
+  color: #BABABA;
+}
+
+.day_seven{
+  color:#121212;
+  margin-bottom: 48px;
+}
+
+.seven{
+  color:#313131;
+  margin-top: 303px;
+  background-image: url(../images/nizOblaka7.png),url(../images/levoOblaka7.png),url(../images/verh7oblaka.png),url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
+  background-repeat: no-repeat;
+  background-position: 100% 440px,720px 90px,100% 60px,100% -170px ,100% 60px;
+}
+
+.td_bold{
+  color:#000000;
+  font-weight: 700px;
+}
+
+.capblack{
+  color: #212121;
+  font-weight: 700;
+}
+
+.wrapSevenDay{
+  display: flex;
+  margin-top: 50px;
+}
+
+.days2{
+  border-collapse: collapse;
+}
+
+.days2 caption{
+  text-align: start;
+  margin-top: 48px;
+  margin-bottom: 30px;
+  max-width: 478px;
+}
+
+.day8 {
+  height: 718px;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/goraDay8.png);
+}
+
+.day8 div{
+  max-width: 417px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day8 p{
+  margin-top: 48px;
+  color:#FFFFFF;
+}
+
+.participation .borderBot{
+  border-bottom: 4px solid #212121;
+  
+}
+
+.participation h2{
+  margin-top: 120px;
+}
+
+.info span{
+  display: block;
+}
+
+.info span:not(:last-child){
+  margin-top: 25px;
+}
+
+.send{
+  margin-top: 110px;
+}
+
+.info .sendcolor{
+  color:#212121;
+}
+
+.info a{
+  color: #F47648;
+  
+}
+
+.participation__wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.price{
+ width: 800px;
+ border-collapse: collapse;
+}
+
+.price tr{
+  border-bottom: 1px solid grey;
+  
+}
+
+
+.price td{
+  padding: 35px 0;
+  width:50%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.price .end{
+  text-align: end;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.price__descrip{
+  display: flex;
+  max-width: 800px;
+  margin-top: 70px;
+  padding-bottom: 135px;
+}
+
+
+
+.price__descrip_item ul > li{
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.price__descrip_item ul > li:not(:first-child){
+  margin-top: 16px;
+}
+
+.head__descrip{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head__descrip span{
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+
+
+.price__descrip_item{
+  width: 50%;
+}
+
+.onlineApplication__wrap{
+  margin-top: 96px;
+}
+
+.socialNetwork{
+  margin-top:30px;
+}
+
+.socialNetwork img{
+  display: inline-block;
+}
+
+.socialNetwork a:not(:last-child){
+  margin-right: 30px;
+}
+
+.onlineApplication{
+  background-image: url(../images/magazine-kamchatka\ 1.png),url(../images/onlineApplication__ugol.png),url(../images/onlineApplication__top.png),url(../images/onlineApplication_bot.png),url(../images/onlineApplication.png);
+  background-repeat: no-repeat;
+  background-position:0 850px,0 370px,100% 350px,bottom,bottom;
+}
+
+.underline{
+  width: 260px;
+  border: 0;
+  border-bottom: 1px solid #000;
+  /*background-color: rgba(0,0,0,0);
+  outline: 0;  */
+}
+
+.top_field{
+  display: flex;
+}
+
+.onlineApplication__wrap{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_field_name{
+  margin-right: 45px;
+}
+
+.top_field span{
+  display:block;
+  margin-bottom: 15px;
+}
+
+.tarif{
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.price_bold{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.input_group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.date_form{
+  border: 0;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.onlineApplication__wrap textarea{
+  border: 0;
+  border-bottom: 1px solid black;
+  padding-top: 1rem;
+  width: 100%;
+  font-size: 20px;
+}
+
+.button{
+  padding: 8px 32px;
+  border-radius: 5px;
+  background-color: #F47648;
+  display: block;
+  margin-left: auto;
+  color: white;
+  border:none;
+  margin-top: 50px;
+}
+
+.onlineApplication__foot{
+  margin-top: 348px;
+  margin-left: 25%;
+  padding-bottom: 160px;
+}
+
+.btn2{
+  display: inline-block;
+}
+
+.und2{
+  border-bottom: 1px solid white;
+  width: 560px;
+}
+
+.knowncolor{
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.dream__team h2{
+  max-width: 950px;
+  margin-top: 120px;
+}
+
+.dream__team p{
+  max-width: 511px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  line-height: 24px;
+}
+
+.team_man{
+  display: block;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.socialcolor{
+  color: #F47648;
+  font-weight: 400;
+}
+
+.dream__team_cards{
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.dream__team_card:not(:last-child){
+  margin-right: 96px;
+}
+
+footer{
+  background-color:#212121;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.inwrap__footer{
+  display: flex;
+  border-bottom: 1px solid #535353;
+  padding-bottom: 50px;
+}
+
+footer ul{
+  margin-top: 40px;
+}
+
+footer ul li{
+  color:#FFFFFF;
+  list-style: none;
+}
+
+footer ul li:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-block; 
+  background: #212121;
+  color: #FFFFFF; 
+  padding: 12px 34px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  border: 1px solid #FFFFFF;
+ }
+
+ .instagram__images{
+   max-width: 543px;
+   margin-top: 15px;
+ }
+
+ .one__foot{
+   padding-right: 40px;
+   border-right: 1px solid #535353;
+ }
+
+ .two__foot{
+   padding: 0 40px;
+   border-right: 1px solid #535353;
+ }
+
+ .two__foot span{
+   color: #FFFFFF;
+   margin-right: auto;
+ }
+
+ .two__foot_wrap{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .three__foot{
+  padding: 0 40px;
+  border-right: 1px solid #535353;
+}
+
+.three__foot span{
+  max-width: 220px;
+  display: inline-block;
+}
+
+.wrap_see{
+  margin-left: 18px;
+}
+
+.colWhite{
+  color: #FFFFFF;
+}
+
+
+.three_wrap{
+  display: flex;
+}
+
+.see_video{
+  margin-bottom: 6px;
+}
+
+/*.see_video{
+  color: #FFFFFF;
+  vertical-align: top;
+  margin-left: 18px;
+}*/
+
+.socseti_logo{
+  margin-right: 20px;
+}
+
+.social_log{
+  margin:45px 0px 10px 0px;
+}
+
+.four__foot{
+  margin-left: 40px;
+  margin-right: auto;
+}
+
+.four__foot a{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.worktime{
+  font-size: 14px;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+.four__foot_group{
+  margin-bottom: 12px;
+}
+
+.footfoot{
+  margin-top: 30px;
+  display: inline-block;
+}
+
+
+
+
+
