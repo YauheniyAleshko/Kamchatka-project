@@ -23,9 +23,56 @@ h5{
   font-size: 36px;
 }
 
-header{
+.header{
   background-image:url(../images/head-fone.png);
+  position: relative;
+}
+
+.slider__header{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 600px;
+  overflow: hidden;
   
+}
+
+/*.slider__header:hover{overflow: visible;}*/
+
+.slider__header_list{
+  list-style: none;
+  display: flex;
+}
+
+.slider__header ul li{
+ 
+  /*margin:0 5px;*/
+  
+}
+
+.slider__header img,.slider__day2 img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  transform-origin:bottom;
+  transform: scale(0.8);
+}
+
+.slider__header img:hover{
+  transform: scale(1);
+  transition:1s;
+}
+
+.slider__header_btn_group{
+  margin: 10px 0px 0px 25px;
+}
+
+.slider__header-btn_left img, .slider__header-btn_right img{
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .container{
@@ -41,10 +88,6 @@ header{
   justify-content: space-between;
 }
 
-.head__wrap{
-  display: flex;
-}
-
 .nav ul{
   display: flex;
   list-style: none;
@@ -58,7 +101,17 @@ header{
 .nav a{
   text-decoration: none;
   color: #275553;
+  font-size: 1.3rem;
 }
+
+.nav a:hover{
+  color:white;
+}
+
+.nav .reserve:hover{
+  background-color: #F47648;
+}
+
 
 .reserve{
   border:1px solid #275553;
@@ -83,6 +136,11 @@ header{
   padding: 0.625rem 1.5rem;
 }
 
+.date a{
+  color: white;
+  text-decoration: none;
+}
+
 header p{
   margin-top:4rem;
   font-size: 1.25rem;
@@ -91,22 +149,27 @@ header p{
   margin-bottom: 2.375rem;
 }
 
-.timetable{
-  color: #FFFFFF;
-  
-}
-
 .head__arrow{
-  margin-left:2.3125rem;
-  border: 1px solid #FFFFFF;
-  border-radius: 1.5625rem;
-  padding:0.625rem;
-  height: 0.625rem;
+  margin-left:1.3125rem;
+  width: 0.625rem;
+  border: 1px solid white;
+  border-radius: 35%;
+  padding: 0.6rem;
 }
 
-.wrap__time{
+.head__arrow:hover{
+  background-color: #F47648;
+  cursor: pointer;
+}
+
+.wrap__timetable{
   display: flex;
   align-items: center;
+}
+
+.wrap__timetable a{
+  color: #FFFFFF;
+  font-size: 1.25rem;
 }
 
 .icons{
@@ -121,6 +184,28 @@ header p{
 .start__travel{
   max-width: 45.5rem;
   margin-bottom:1.6875rem;
+}
+
+.one__two{
+  position: relative;
+}
+
+.slider__day2{
+  position: absolute;
+  top: 91%;
+  left: 0;
+  width: 600px;
+}
+
+.slider__day2 .slider__header_list{
+  overflow: hidden;
+  margin-left: -400px;
+}
+
+.slider__day2_btn_group{
+  width: 80px;
+  margin-left: auto;
+  margin-top: 20px;
 }
 
 .one__two_dream{
@@ -213,7 +298,6 @@ header p{
   margin-top: 300px;
   color: #313131;
   max-width: 856px;
-
 }
 
 .program2{
@@ -224,6 +308,16 @@ header p{
 
 .program2 p:not(:first-child){
   margin-top: 20px;
+}
+
+.day2__paragraf_group{
+  margin-top: 220px;
+  max-width: 478px;
+  margin-left: auto;
+}
+
+.day2__paragraf_group p:not(:first-child){
+  margin-top: 30px;
 }
 
 .one__the_way{
