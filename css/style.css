@@ -112,7 +112,6 @@ h5{
   background-color: #F47648;
 }
 
-
 .reserve{
   border:1px solid #275553;
   border-radius: 5px;
@@ -177,6 +176,10 @@ header p{
   padding-bottom: 4.375rem;
 }
 
+.icons img{
+  cursor: pointer;
+}
+
 .insta{
   margin-left: 1.875rem;
 }
@@ -190,22 +193,27 @@ header p{
   position: relative;
 }
 
-.slider__day2{
+#dayTwo{
   position: absolute;
-  top: 91%;
+  top: 85%;
   left: 0;
   width: 600px;
-}
-
-.slider__day2 .slider__header_list{
   overflow: hidden;
-  margin-left: -400px;
 }
 
-.slider__day2_btn_group{
-  width: 80px;
+#dayTwo .slider__header_btn_group,#dayThree .slider__header_btn_group,#dayFive .slider__header_btn_group,#daySeven .slider__header_btn_group{
   margin-left: auto;
-  margin-top: 20px;
+  width: 110px;
+}
+
+#dayTwo .slider__header_btn_group img,#dayThree .slider__header_btn_group img,#daySeven .slider__header_btn_group img{
+  height: 40px;
+  width: 40px;
+}
+
+#dayTwo .slider__header-btn_left img,#dayTwo .slider__header-btn_right img,#dayThree .slider__header-btn_left img,#dayThree .slider__header-btn_right img,#daySeven .slider__header-btn_left img,#daySeven .slider__header-btn_right img{
+  border: none;
+  padding: none;
 }
 
 .one__two_dream{
@@ -218,6 +226,7 @@ header p{
   color: #313131;
   margin-top: 2.1875rem;
   max-width: 38.3125rem;
+  font-size: 1.2rem;
 }
 
 .info__tour{
@@ -230,7 +239,7 @@ header p{
 }
 
 .info__group_type{
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   color: #212121;
   margin-top: 0.5rem;
   font-weight: 400;
@@ -239,12 +248,13 @@ header p{
 .info__group_descrip{
   color: #212121;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .camcha{
   font-weight: 600;
   font-size: 24px;
-  /*color:#FFFFFF;*/
+  color:#FFFFFF;
   max-width: 662px;
   margin-top: 380px;
 }
@@ -314,6 +324,7 @@ header p{
   margin-top: 220px;
   max-width: 478px;
   margin-left: auto;
+  padding-bottom: 50px;
 }
 
 .day2__paragraf_group p:not(:first-child){
@@ -335,6 +346,10 @@ header p{
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+  box-shadow: 0px 20px 40px -20px rgb(38 38 67 / 50%), 0px 40px 80px -20px rgb(38 38 67 / 55%);
 }
 
 .card img{
@@ -367,6 +382,14 @@ header p{
   display: flex;
   margin-top: 80px;
   justify-content: space-between;
+}
+
+#dayThree{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 600px;
+  overflow: hidden;
 }
 
 .wrap__right{
@@ -405,9 +428,22 @@ header p{
   margin-bottom: 48px;
 }
 
+#dayFour{
+  top: 20px;
+}
+
 .five{
   margin-top:222px;
 }
+
+#dayFive{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 600px;
+  overflow: hidden;
+}
+
 
 .five p{
   color:white;
@@ -473,6 +509,14 @@ header p{
 .wrapSevenDay{
   display: flex;
   margin-top: 50px;
+}
+
+#daySeven{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    overflow: hidden;
 }
 
 .days2{
@@ -893,7 +937,7 @@ footer ul li:not(:last-child){
   /*opacity: 0.9;*/
   margin: 5% auto;
   padding: 20px;
-  border: 5px solid #FFFFFF;
+  border: 3px solid #FFFFFF;
   width: 50%;
   /*height: 50%;*/
   z-index: 9999;

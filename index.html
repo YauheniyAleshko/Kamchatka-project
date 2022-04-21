@@ -18,10 +18,10 @@
 
         <nav class="nav">
           <ul>
-            <li><a href="#timetable">Расписание тура</a></li>
-            <li><a href="#recording">Как записаться</a></li>
-            <li><a href="#team">Команда</a></li>
-            <li><a href="#recording" class="reserve">Забронировать</a></li>
+            <li><a data-goto="#timetable" href="#" class="nav-link">Расписание тура</a></li>
+            <li><a data-goto="#recording" href="#" class="nav-link">Как записаться</a></li>
+            <li><a data-goto="#team" href="#" class="nav-link">Команда</a></li>
+            <li><a data-goto="#recording" href="#" class="nav-link reserve">Забронировать</a></li>
           </ul>
         </nav>
       </div>
@@ -30,8 +30,8 @@
       <span class="date"><a href="#participation" id="blink">23.06 - 04.07 DREAM TOUR</a></span>
       <p>Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь. </p>
       <div class="wrap__timetable">
-        <a href="#timetable">Расписание тура</a>
-        <a href="#timetable"><img class="head__arrow" src="images/head_arrow.svg"></a>
+        <a  data-goto="#timetable" href="#" class="nav-link">Расписание тура</a>
+        <a  href="#timetable"><img class="head__arrow" src="images/head_arrow.svg"></a>
       </div>
 
       <div class="slider__header" id="slider-head">
@@ -48,8 +48,8 @@
       </div>
 
       <div class="icons">
-        <img src="images/facebook.svg" alt="facebook">
-        <img class="insta" src="images/insta.svg" alt="instagram">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="insta" src="images/insta.svg" alt="instagram"></a>
       </div>
     
     </div>
@@ -99,7 +99,7 @@
 
       <span class="maxim">Максим, @max_max</span>
 
-      <h4 class="day_one"><a name = "timetable"><span class="day__color">День 1.</span> Прибытие. Встреча в аэропорту и размещение</a></h4>
+      <h4 class="day_one"><a id = "timetable"><span class="day__color">День 1.</span> Прибытие. Встреча в аэропорту и размещение</a></h4>
 
       <div class="program">
         <p>С высоты птичьего полета вы увидите знаменитые «домашние» вулканы – Корякский, Авачинский и Козельский. У
@@ -111,12 +111,12 @@
             class="white"> общая встреча</span>, проверка снаряжения, обсуждение программы завтрашнего дня.</p>
       </div>
 
-      <div class="slider__header" id="slider-head1">
+      <div class="slider__header" id="dayOne">
         <ul class="slider__header_list">
-          <li><img src="images/1-2.jpg" alt="#"></li>
-          <li><img src="images/37-1.jpg" alt="#"></li>
-          <li><img src="images/1-1.jpg" alt="#"></li>
-          <li><img src="images/1-3.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
         </ul>
         <div class="slider__header_btn_group">
           <a class="slider__header-btn_left"><img src="images/slide_btnLeft.svg"></a>
@@ -134,29 +134,25 @@
       </div>
 
 
-
-      <div class="slider__day2" id="slider-head">
+      <div class="slider__header" id="dayTwo">
         <ul class="slider__header_list">
-          <li><img src="images/1-2.jpg" alt="#"></li>
-          <li><img src="images/37-1.jpg" alt="#"></li>
-          <li><img src="images/1-1.jpg" alt="#"></li>
-          <li><img src="images/1-3.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+          <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
         </ul>
-        <div class="slider__day2_btn_group">
-          <a class="slider__header-btn_left"><img src="images/slide_btnLeft.svg"></a>
-          <a class="slider__header-btn_right"><img src="images/slider_btnRight.svg"></a>
+        <div class="slider__header_btn_group">
+          <a class="slider__header-btn_left"><img src="images/blackStrelkaLeft.svg"></a>
+          <a class="slider__header-btn_right"><img src="images/blackstrelka.svg"></a>
         </div>
       </div>
-
+      
       <div class="day2__paragraf_group">
         <p>Выезд из отеля в 10.00. Переезд в верховья реки Паратунка к подножию вулкана Вилючинский. Обзорная пешеходная
           экскурсия к водопаду Вилючинский. Термос с чаем, шоколад. Возвращение назад</p>
         <p>Обед. Купание в Верхне-Паратунских термальных источниках, расположенных на склоне сопки Горячая.</p>
         <p>Продолжительность – 6-8 часов. Трансфер в гостиницу.</p>
       </div>
-
-
-
 
     </div>
   </section>
@@ -198,7 +194,21 @@
 
   <section class="_3rd__to_7th">
     <div class="wrapper__days">
-      <div class="slide" style="height: 200px;">Slider</div>
+      <div class="slide" style="position: relative;">
+        <div class="slider__header" id="dayThree">
+          <ul class="slider__header_list">
+            <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
+          </ul>
+          <div class="slider__header_btn_group">
+            <a class="slider__header-btn_left"><img src="images/blackStrelkaLeft.svg"></a>
+            <a class="slider__header-btn_right"><img src="images/blackstrelka.svg"></a>
+          </div>
+        </div>
+      </div>
+
       <div class="wrap__right">
         <h4 class="day_three"><span class="day__color">День 3.</span> Горные цирки и водопады вулкана Вачкажец</h4>
         <p>Вачкажец–горный массив и его окрестности, одно из красивейших мест первозданной камчатской природы. Небольшой
@@ -212,7 +222,20 @@
     </div>
 
     <div class="wrapper__days_reserv">
-      <div class="slide" style="height: 200px;">Slider</div>
+      <div class="slide" style="position: relative;" >
+        <div class="slider__header" id="dayFour">
+          <ul class="slider__header_list">
+            <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
+          </ul>
+          <div class="slider__header_btn_group">
+            <a class="slider__header-btn_left"><img src="images/slide_btnLeft.svg"></a>
+            <a class="slider__header-btn_right"><img src="images/slider_btnRight.svg"></a>
+          </div>
+        </div>
+      </div>
       <div class="wrap__left">
         <h4 class="day_four"><span class="day__color">День 4.</span>Экскурсия к подножию Авачинского вулкана</h4>
         <p>Инструктаж по поведению группы в горах. Проверка снаряжения.Выезд на автомашине на вулканическое плато
@@ -226,7 +249,21 @@
     </div>
 
     <div class="wrapper__days five">
-      <div class="slide" style="height: 200px;">Slider</div>
+      <div class="slide" style="position: relative">
+        <div class="slider__header" id="dayFive">
+          <ul class="slider__header_list">
+            <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
+          </ul>
+          <div class="slider__header_btn_group">
+            <a class="slider__header-btn_left"><img src="images/slide_btnLeft.svg"></a>
+            <a class="slider__header-btn_right"><img src="images/slider_btnRight.svg"></a>
+          </div>
+        </div>
+      </div>
+
       <div class="wrap__right">
         <h4 class="day_four"><span class="day__color">День 5.</span>Морская прогулка к острову Старичков</h4>
         <p>Инструктаж по поведению группы при передвижении на плавсредствах, приему таблеток от морской болезни.</p>
@@ -240,7 +277,20 @@
     </div>
 
     <div class="wrapper__days_reserv littleMarg">
-      <div class="slide" style="height: 200px;">Slider</div>
+      <div class="slide" style="position: relative;">
+        <div class="slider__header" id="daySix">
+          <ul class="slider__header_list">
+            <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
+          </ul>
+          <div class="slider__header_btn_group">
+            <a class="slider__header-btn_left"><img src="images/slide_btnLeft.svg"></a>
+            <a class="slider__header-btn_right"><img src="images/slider_btnRight.svg"></a>
+          </div>
+        </div>
+      </div>
       <div class="wrap__left">
         <h4 class="day_four"><span class="day__color">День 6.</span>Берег Тихого океана, экскурсия по городу</h4>
         <p>Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по
@@ -277,7 +327,20 @@
     </div>
 
     <div class="wrapSevenDay">
-      <div style="width:1000px">Slide</div>
+      <div class="slider" style="width:1000px;position: relative;">
+        <div class="slider__header" id="daySeven">
+          <ul class="slider__header_list">
+            <li data-modal-btn="my_modal5"><img src="images/1-4.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal6"><img src="images/1-5.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal7"><img src="images/1-6.jpg" alt="#"></li>
+            <li data-modal-btn="my_modal8"><img src="images/1-7.jpg" alt="#"></li>
+          </ul>
+          <div class="slider__header_btn_group">
+            <a class="slider__header-btn_left"><img src="images/blackStrelkaLeft.svg"></a>
+            <a class="slider__header-btn_right"><img src="images/blackstrelka.svg"></a>
+          </div>
+        </div>
+      </div>
       <div>
         <p>Перелёт и посадка в Налычевской долине. Купание в горячих источниках. Здесь же вам предложат обед - горячее,
           чай и камчатский морс. Трансфер в гостиницу. </p>
@@ -310,7 +373,7 @@
   <section class="participation">
     <div class="container borderBot">
 
-      <h2><a name = "participation">Стоимость участия</a></h2>
+      <h2><a id = "participation">Стоимость участия</a></h2>
 
       <div class="participation__wrap">
         <table class="price">
@@ -380,7 +443,7 @@
     <div class="container">
       <div class="onlineApplication__wrap">
         <div>
-          <h5><a name = "recording">Онлайн-заявка</a></h5>
+          <h5><a id = "recording">Онлайн-заявка</a></h5>
           <div class="socialNetwork">
             <a href="#"><img src="images/instagram (5) 1.svg"></a>
             <a href="#"><img src="images/faceTwo.svg"></a>
@@ -457,7 +520,7 @@
   <section class="dream__team">
     <div class="container">
 
-      <h2><a name ="team">Про нашу супер крутую команду Dreamkam Tour</a></h2>
+      <h2><a id ="team">Про нашу супер крутую команду Dreamkam Tour</a></h2>
       <p>Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей
         физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное
         колличество эмоций.</p>
@@ -580,6 +643,46 @@
         <div class="close_modal_window">&times;</div>
       </div>
       <img class="modal-img" src="./images/1-3.jpg" alt="#">
+    </div>
+  </div>
+
+  <div data-modal-window="my_modal5" class="modal">
+    <div class="modal-content">
+      <div class="modal_inner">
+        <div class="modal_title">Свежий воздух без загрязнений</div>
+        <div class="close_modal_window">&times;</div>
+      </div>
+      <img class="modal-img" src="./images/1-4.jpg" alt="#">
+    </div>
+  </div>
+
+  <div data-modal-window="my_modal6" class="modal">
+    <div class="modal-content">
+      <div class="modal_inner">
+        <div class="modal_title">Незамерзающие реки</div>
+        <div class="close_modal_window">&times;</div>
+      </div>
+      <img class="modal-img" src="./images/1-5.jpg" alt="#">
+    </div>
+  </div>
+
+  <div data-modal-window="my_modal7" class="modal">
+    <div class="modal-content">
+      <div class="modal_inner">
+        <div class="modal_title">Незамерзающие реки</div>
+        <div class="close_modal_window">&times;</div>
+      </div>
+      <img class="modal-img" src="./images/1-6.jpg" alt="#">
+    </div>
+  </div>
+
+  <div data-modal-window="my_modal8" class="modal">
+    <div class="modal-content">
+      <div class="modal_inner">
+        <div class="modal_title">Дикие склоны для сноуборда</div>
+        <div class="close_modal_window">&times;</div>
+      </div>
+      <img class="modal-img" src="./images/1-7.jpg" alt="#">
     </div>
   </div>
 

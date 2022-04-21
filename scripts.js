@@ -63,7 +63,13 @@ const slider = function(id) {
 };
 
 slider('slider-head');
-slider('slider-head1');
+slider('dayOne');
+slider('dayTwo');
+slider('dayThree');
+slider('dayFour');
+slider('dayFive');
+slider('daySix');
+slider('daySeven')
 
 let btns = document.querySelectorAll("*[data-modal-btn]");
 
@@ -77,4 +83,26 @@ for(let i = 0; i < btns.length;i++){
       modal.style.display = "none";
     });
   });
+}
+
+const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
+if (menuLinks.length > 0){
+  menuLinks.forEach(menuLink =>{
+    menuLink.addEventListener("click",onMenuLinkClick);
+  });
+
+  function onMenuLinkClick(e){
+    const menuLink = e.target;
+console.log(menuLink.dataset.goto)
+    if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset;
+
+      window.scrollTo({
+        top:gotoBlockValue,
+        behavior: "smooth" 
+      });
+      e.preventDefault();
+    }    
+  }
 }
