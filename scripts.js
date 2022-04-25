@@ -23,7 +23,7 @@ const slider = function(id) {
 
     let stop = Math.floor(list.offsetWidth / widthFirstItem)*widthFirstItem;
 
-    console.log(stop)
+    
 
 
     const left = function() {
@@ -106,6 +106,25 @@ console.log(menuLink.dataset.goto)
     }    
   }
 }
+
+
+let plusButton = document.querySelector('.buttonCountPlus'),
+    minusButton = document.querySelector('.buttonCountMinus'),
+    countInput = document.querySelector('.counter');
+
+plusButton.addEventListener('click',function(event){
+  event.preventDefault();
+  if(countInput.value >= 0){
+    countInput.value ++;
+  }
+});
+
+minusButton.addEventListener('click',function(event){
+  event.preventDefault();
+  if(countInput.value >= 1){
+    countInput.value --;
+  }
+});
 
 
 
