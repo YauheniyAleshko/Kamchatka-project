@@ -128,7 +128,7 @@ minusButton.addEventListener('click',function(event){
 
 
 
-/*let changeThemeButtons = document.querySelectorAll('.changeTheme');
+let changeThemeButtons = document.querySelectorAll('.changeTheme');
 
 changeThemeButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -152,4 +152,15 @@ if(activeTheme === null || activeTheme === 'light') { // Если значени
     applyTheme('light');
 } else if (activeTheme === 'dark') { // Если значение равно 'dark' - применяем темную
     applyTheme('dark');
-}*/
+}
+
+var request = new XMLHttpRequest()
+request.open('get', 'http://api.openweathermap.org/data/2.5/weather?q=Petropavlovsk-Kamchatsky&lang=ru&units=metric&appid=8d0f2eb07d18ad18a2e9eb9b7f00ba74');
+request.send();
+request.addEventListener('readystatechange',function() {
+  if(request.readyState == 4 && request.status == 200) {
+    var result = request.responseText;
+    result = JSON.parse(result);
+    document.querySelector('.temp').innerHTML = 't° на Камчатке сейчас: '+ result.main.temp.toFixed(0) + "°C"
+  }
+});

@@ -739,6 +739,7 @@ header p{
   color: white;
   border:none;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .onlineApplication__foot{
@@ -749,11 +750,14 @@ header p{
 
 .btn2{
   display: inline-block;
+  cursor: pointer;
 }
 
 .und2{
   border-bottom: 1px solid white;
   width: 560px;
+  color: wheat;
+  font-size: 20px;
 }
 
 .knowncolor{
@@ -808,11 +812,12 @@ footer{
 
 footer ul{
   margin-top: 40px;
+  list-style: none;
 }
 
-footer ul li{
+footer ul li a{
   color:#FFFFFF;
-  list-style: none;
+  text-decoration: none;
 }
 
 footer ul li:not(:last-child){
@@ -873,6 +878,8 @@ footer ul li:not(:last-child){
   color: #FFFFFF;
 }
 
+  
+
 
 .three_wrap{
   display: flex;
@@ -914,6 +921,10 @@ footer ul li:not(:last-child){
 
 .four__foot_group{
   margin-bottom: 12px;
+}
+
+.four__foot_group a{
+  text-decoration: none;
 }
 
 .footfoot{

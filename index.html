@@ -62,6 +62,8 @@
 
   <section class="one__two">
     <div class="container">
+      <div style="display: flex;">
+        <div>
       <h3 class="start__travel">Путешествие на край света начинается</h3>
       <p class="one__two_dream">Ваша мечта осуществилась, вы приняли решение, и вам предстоит путешествие на край света.
       </p>
@@ -69,7 +71,10 @@
         нашей планеты, многое увидеть, испытать на себе и полюбить, увезти целый рюкзак незабываемых чувств и
         впечатлений. Каждый день вы будете выезжать на радиальные маршруты, а проживать в комфортабельных двухместных
         номерах. </p>
+        </div>
 
+        <div class="temp" style="color: rgb(201, 37, 37);font-size:5vh;font-weight:700;margin-left: 2vw;margin-top: 200px;"></div>
+      </div>  
       <div class="info__tour">
         <div class="info__group">
           <img src="images/level 1.svg" alt="#">
@@ -474,7 +479,7 @@
             <div class="tarif">Тариф</div>
             <div class="input_group">
               <div>
-                <input type="radio"> <span>Базовый (для камчадал)</span>
+                <input type="radio" name="myradio"> <span>Базовый (для камчадал)</span>
               </div>
               <div>
                 <span class="price_bold">79 000 руб</span>
@@ -483,7 +488,7 @@
 
             <div class="input_group">
               <div>
-                <input type="radio"> <span>Базовый + проживание</span>
+                <input type="radio" name="myradio"> <span>Базовый + проживание</span>
               </div>
               <div>
                 <span class="price_bold">99 000 руб</span>
@@ -491,7 +496,7 @@
             </div>
             <div class="input_group">
               <div>
-                <input type="radio"><span> Базовый + проживание + долина гейзеров</span>
+                <input type="radio" name="myradio"><span> Базовый + проживание + долина гейзеров</span>
               </div>
               <div>
                 <span class="price_bold">179 000 руб</span>
@@ -533,17 +538,17 @@
       <div class="dream__team_cards">
         <div class="dream__team_card">
           <img src="images/ali.png">
-          <span class="team_man">Алина Гончарова, <a href="#" class="socialcolor">@alin_och</a></span>
+          <span class="team_man">Алина Гончарова, <a href="https://www.instagram.com/" target="_blank" class="socialcolor">@alin_och</a></span>
         </div>
 
         <div class="dream__team_card">
           <img src="images/jek.png">
-          <span class="team_man">Евгений Барсуков, <a href="#" class="socialcolor">@eugen_eugen</a></span>
+          <span class="team_man">Евгений Барсуков, <a href="https://www.instagram.com/" target="_blank" class="socialcolor">@eugen_eugen</a></span>
         </div>
 
         <div class="dream__team_card">
           <img src="images/dim.png">
-          <span class="team_man">Дмитрий Осипов, <a href="#" class="socialcolor">@dim_os</a></span>
+          <span class="team_man">Дмитрий Осипов, <a href="https://www.instagram.com/" target="_blank" class="socialcolor">@dim_os</a></span>
         </div>
       </div>
     </div>
@@ -555,16 +560,16 @@
         <div class="one__foot">
           <img class="logo__foot" src="images/foot_logo.svg">
           <ul>
-            <li>Расписание тура</li>
-            <li>Стоимость</li>
-            <li>Как записаться</li>
-            <li>Команда</li>
+            <li><a data-goto="#timetable" href="#" class="nav-link">Расписание тура</a></li>
+            <li><a data-goto="#recording" href="#" class="nav-link">Стоимость</a></li>
+            <li><a data-goto="#recording" href="#" class="nav-link">Как записаться</a></li>
+            <li><a data-goto="#team" href="#" class="nav-link">Команда</a></li>
           </ul>
         </div>
         <div class="two__foot">
           <div class="two__foot_wrap">
             <div><span>@dreamkamtour</span></div>
-            <div><a href="#" class="btn">Подписаться</a></div>
+            <div><a href="https://www.instagram.com/" target="_blank" class="btn">Подписаться</a></div>
           </div>
 
           <div class="instagram__images">
@@ -582,14 +587,14 @@
             <img src="images/Screenshot_footer.png">
             <div class="wrap_see colWhite">
               <span class="see_video">Смотрите видео отзывы наших клиентов</span>
-              <span><a href="#" class="colWhite">Перейти в Instagram</a></span>
+              <span><a href="https://www.instagram.com/" target="_blank" class="colWhite">Перейти в Instagram</a></span>
             </div>
           </div>
           <span class="colWhite social_log">Социальные сети</span>
           <div class="logotips">
-            <img class="socseti_logo" src="images/instagram_footer.svg" alt="socseti_logo">
-            <img class="socseti_logo" src="images/facebook_footer.svg" alt="socseti_logo">
-            <img class="" src="images/vk_footer.svg" alt="socseti_logo">
+            <a href="https://www.instagram.com/" target="_blank"><img class="socseti_logo" src="images/instagram_footer.svg" alt="socseti_logo"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="socseti_logo" src="images/facebook_footer.svg" alt="socseti_logo"></a>
+            <a href="https://www.vk.com/" target="_blank"><img class="" src="images/vk_footer.svg" alt="socseti_logo"></a>
           </div>
         </div>
         <div class="four__foot">
@@ -597,7 +602,7 @@
           <span class="colWhite worktime">Работаем с 9:00 до 18:00</span>
           <div class="four__foot_group">
             <img src="images/convert_footer.svg" alt="mail">
-            <span class="colWhite">info@dreamkamtour.ru</span>
+            <a href = "mailto:info@dreamkamtour.ru"><span class="colWhite">info@dreamkamtour.ru</span></a>
           </div>
           <div>
             <img src="images/mestopologenie_footer.svg" alt="misto">
