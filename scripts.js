@@ -29,7 +29,7 @@ const slider = function(id) {
     const left = function() {
       let ml = Math.abs(parseInt(firstItem.style.marginLeft));
 
-      console.log(ml)
+      /*console.log(ml)*/
 
       if(!ml) ml = 0;
 
@@ -42,7 +42,7 @@ const slider = function(id) {
     const right = function() {
       let ml = Math.abs(parseInt(firstItem.style.marginLeft));
 
-      console.log(ml)
+      /*console.log(ml)*/
 
       if(!ml) ml = 0;
 
@@ -86,6 +86,7 @@ for(let i = 0; i < btns.length;i++){
 }
 
 const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
+console.log(menuLinks);
 if (menuLinks.length > 0){
   menuLinks.forEach(menuLink =>{
     menuLink.addEventListener("click",onMenuLinkClick);
@@ -93,10 +94,17 @@ if (menuLinks.length > 0){
 
   function onMenuLinkClick(e){
     const menuLink = e.target;
-console.log(menuLink.dataset.goto)
+    console.log(menuLink.dataset.goto)
+    console.log(menuLink)
     if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.pageYOffset;
+      const gotoBlockValue = gotoBlock.getBoundingClientRect().top +/* window.*/pageYOffset - document.querySelector('.navbar').offsetHeight; 
+
+      if(hamb.classList.contains('active')){
+        popup.classList.remove("open");
+        hamb.classList.remove("active");
+        body.classList.remove('noscroll');
+      }
 
       window.scrollTo({
         top:gotoBlockValue,
@@ -152,7 +160,7 @@ if(activeTheme === null || activeTheme === 'light') { // Если значени
     applyTheme('light');
 } else if (activeTheme === 'dark') { // Если значение равно 'dark' - применяем темную
     applyTheme('dark');
-}
+  }
 
 var request = new XMLHttpRequest()
 request.open('get', 'http://api.openweathermap.org/data/2.5/weather?q=Petropavlovsk-Kamchatsky&lang=ru&units=metric&appid=8d0f2eb07d18ad18a2e9eb9b7f00ba74');
@@ -164,3 +172,25 @@ request.addEventListener('readystatechange',function() {
     document.querySelector('.temp').innerHTML = 't° на Камчатке сейчас: '+ result.main.temp.toFixed(0) + "°C"
   }
 });
+
+const hamb = document.querySelector('#hamb');
+const popup = document.querySelector('#popup');
+//const menu = document.querySelector('#menu').cloneNode(1);
+const body = document.body;
+
+
+hamb.addEventListener('click',hambHandler);
+
+function hambHandler(e){
+  e.preventDefault();
+  popup.classList.toggle("open");
+  hamb.classList.toggle("active");
+  body.classList.toggle('noscroll');
+  //renderPopup();
+}
+
+/*function renderPopup(){
+  popup.appendChild(menu); 
+}*/
+
+

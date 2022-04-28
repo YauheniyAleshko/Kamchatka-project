@@ -1,3 +1,112 @@
 body{
-  background-color: grey;
+  background-color: black;
 }
+
+.header__logo {
+  background-image: url(/images/foot_logo.svg);
+  width: 168px;
+  height: 38px;
+}
+
+.header__logo a img{
+  display:none;
+}
+
+.nav a,.top,header p,.camcha,.comment,.maxim,#timetable,.white,.day_two,.start__travel,.program2,h5,.card p,.day_three,.wrap__right p,.day_four,.wrap__left p,.day_seven,#participation,tbody,.head__descrip,.price__descrip ul,.dream__team h2,.capblack,.td_bold{
+  color:antiquewhite;
+}
+
+.header{
+  background: url(/images/head-foneDarktheme.jpg);
+}
+
+.one__two{background-color: black;opacity: 0.9;}
+
+.start__travel{margin-bottom: 3rem;}
+
+.one__two{
+  background-image:/*url(../images/oblachka_pod_gory.png),url(../images/podlogka_pod_oblachka.png),*/url(../images/gora-darkTheme.png),url(../images/plane.png),/*url(../images/cloud_054\ 29.png),url(../images/oblaka.png),*/url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
+  background-repeat: no-repeat;
+  background-position:/*100% 2030px,100% 2350px,*/100% 2070px,100% 500px,/*-84px 1903px,0px 1780px,*/0 580px,0 1250px,0px 1200px,-195px 280px;
+ }
+
+ #dayTwo .slider__header-btn_left{}
+
+ #dayTwo .slider__header-btn_left div,#dayThree .slider__header-btn_left div{
+    background:url(../images/slide_btnLeft.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background-position: 5px 10px;
+    transform-origin: bottom;
+    transform: scale(0.8);
+  }
+
+  #dayTwo .slider__header-btn_left div,#dayThree .slider__header-btn_left div:hover{
+    transform: scale(1);
+    transition: 1s;
+  }
+
+ #dayTwo .slider__header-btn_left img,#dayThree .slider__header-btn_left img {
+  display: none;
+}
+
+#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_right div{
+  background:url(../images/slider_btnRight.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border:1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  background-position: 5px 10px;
+  transform-origin: bottom;
+  transform: scale(0.8);
+}
+#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_right div:hover{
+  transform: scale(1);
+  transition: 1s;
+}
+#dayTwo .slider__header-btn_right img,#dayThree .slider__header-btn_right img {
+  display: none;
+}
+
+.one__the_way{
+  background-color:black;
+}
+
+.card{background-color: grey;}
+
+._3rd__to_7th {background-image: none;}
+
+.seven{
+  background-image:url(../images/day7background.png);
+  background-repeat: no-repeat;
+  background-position: 100% 60px;
+}
+
+#daySeven{display: none;}
+
+.info .sendcolor{color: red;}
+
+.participation .borderBot {
+  border-bottom: 4px solid antiquewhite;
+}
+
+.onlineApplication__wrap form{
+  font-weight: bold;
+}
+
+.onlineApplication{
+  background-image: url(../images/magazine-kamchatka\ 1.png),url(../images/onlineApplication.png);
+  background-repeat: no-repeat;
+  background-position:0 850px,top;
+}
+
+.dream__team p,.dream__team_card span{color: white;}
+

@@ -1,0 +1,117 @@
+@media(min-width:2560px){
+ .header{background-image:url(../images/wallpapers-mountains-10.jpg)}
+ .container{width:73%;}
+ .one__two{
+  background-image:url(../images/oblachka_pod_gory.png),url(../images/gora.png),url(../images/plane.png),url(../images/cloud_054\ 29.png),url(../images/oblaka.png),url(../images/wallpapers-mountains-11.jpg),url(../images/wallpapers-mountains-3.jpg);
+  background-repeat: no-repeat;
+  background-position:100% 2030px,100% 2070px,100% 500px,-84px 1903px,0px 1780px,0px 0px,0px 594px;
+ }
+ .info__group{
+  background-color: coral;
+  border-radius: 25px;
+  padding: 6px;
+ }
+
+ .one__two_dream,.one__two_route{font-weight: bold;}
+ .program{color: white;font-weight: bold;}
+ ._3rd__to_7th{background: linear-gradient(white, black,white);}
+ #daySeven{top: -97px;}
+ .seven{
+  color:#313131;
+  margin-top: 303px;
+  background-image: url(../images/nizOblaka7.png),/*url(../images/levoOblaka7.png),url(../images/verh7oblaka.png),*/url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
+  background-repeat: no-repeat;
+  background-position: 100% 440px,/*720px 90px,100% 60px,*/100% -170px ,100% 60px;
+}
+
+.day8{background-image: url(../images/wallpapers-mountains-30.jpg);}
+.onlineApplication{background: linear-gradient(white, black,white);}
+.dream__team_cards{display: flex;justify-content: space-around;}
+
+}
+
+@media(max-width:768px){
+  .navbar-wrap .menu{
+    display: none;
+  }
+
+  .hamb{
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb-field{
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .popup{
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 200;
+    display: flex;
+    transition: 0.3s;
+    opacity: 0.9;
+  }
+
+  .popup.open{
+    left: 0;
+  }
+
+  .popup .menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+  }
+
+  .popup .menu > li{
+    width: 100%;
+    list-style-type: none;
+  }
+
+  .popup .menu > li >a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .popup .menu > li >a:hover{
+    background-color: pink;
+  }
+
+  .hamb-field.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamb-field.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb-field.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /*body.noscroll{
+    overflow: hidden;
+  }*/
+}
+ 

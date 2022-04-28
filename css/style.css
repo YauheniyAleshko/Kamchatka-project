@@ -88,7 +88,65 @@ h5{
   justify-content: space-between;
 }
 
-.nav ul{
+.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(#ff4800,lightgrey);
+  opacity:0.9;
+  z-index: 100;
+}
+
+.navbar .container{height: 100%;}
+
+.navbar-wrap{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb{
+  display: none;
+}
+
+.popup{
+  display: none;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a{
+  text-decoration: none;
+}
+
+.navbar-wrap .menu{
+  display: flex;
+}
+
+.navbar-wrap .menu > li{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-wrap .menu > li > a{
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #275553;
+}
+
+.navbar-wrap .menu > li > a:hover{
+  color: white;
+}
+
+
+
+/*.nav ul{
   display: flex;
   list-style: none;
   margin-right: 4rem;
@@ -118,10 +176,10 @@ h5{
   padding: 0.625rem 2rem;
   color:#275553;
   text-decoration: none;
-}
+}*/
 
 .top{
-  color:#FFFFFF;
+  /*color:#FFFFFF;*/
   margin-top: 5.625rem;
   margin-bottom: 2.1875rem;
   max-width: 37.5rem;
@@ -215,6 +273,8 @@ header p{
   border: none;
   padding: none;
 }
+
+#dayTwo .slider__header-btn_left div,#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_left div,#dayThree .slider__header-btn_right div{display: inline-block;}
 
 .one__two_dream{
   font-size: 1.5rem;
@@ -387,14 +447,14 @@ header p{
 #dayThree{
   position: absolute;
   top: 0%;
-  left: 0;
+  left: -30px;
   width: 600px;
   overflow: hidden;
 }
 
 .wrap__right{
   max-width: 505px;
-  margin-right: 133px;
+  margin-right: 85px;
 }
 
 .wrap__right p{
@@ -415,7 +475,7 @@ header p{
 
 .wrap__left{
   max-width: 533px;
-  margin-left: 100px;
+  margin-left: 55px;
 }
 
 ._3rd__to_7th{
@@ -491,9 +551,9 @@ header p{
 .seven{
   color:#313131;
   margin-top: 303px;
-  background-image: url(../images/nizOblaka7.png),url(../images/levoOblaka7.png),url(../images/verh7oblaka.png),url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
+  background-image: url(../images/nizOblaka7.png),/*url(../images/levoOblaka7.png),*/url(../images/verh7oblaka.png),url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
   background-repeat: no-repeat;
-  background-position: 100% 440px,720px 90px,100% 60px,100% -170px ,100% 60px;
+  background-position: 100% 440px,/*720px 90px,*/100% 60px,100% -170px ,100% 60px;
 }
 
 .td_bold{
@@ -513,8 +573,8 @@ header p{
 
 #daySeven{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -55px;
+    left: -30px;
     width: 600px;
     overflow: hidden;
 }
@@ -1006,7 +1066,7 @@ footer ul li:not(:last-child){
   position: absolute;
   cursor: pointer;
   top: 55px;
-  right: 40px;
+  right: 0px;
   transform: translateY(-50%);
   padding: 10px;
   /*background: #ffffff;*/
@@ -1015,4 +1075,4 @@ footer ul li:not(:last-child){
 }
 
 
-
+.dream__team p,.dream__team_card span{color: black;}
