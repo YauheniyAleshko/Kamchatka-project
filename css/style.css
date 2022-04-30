@@ -244,6 +244,18 @@ header p{
   position: relative;
 }
 
+.wrap_one__two-Info{
+  display: flex;
+}
+
+.one__two .temp{
+  color: rgb(201, 37, 37);
+  font-size:5vh;
+  font-weight:700;
+  margin-left: 2vw;
+  margin-top: 200px;
+}
+
 #dayTwo{
   position: absolute;
   top: 85%;
@@ -330,8 +342,6 @@ header p{
  background-position:100% 2030px,100% 2350px,100% 2070px,100% 500px,-84px 1903px,0px 1780px,0 580px,0 1250px,0px 1200px,-195px 280px;
 }
  
-
-
 .day_one{
   margin-top: 212px;
   max-width: 458px;
