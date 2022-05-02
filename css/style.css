@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+h1{
+  margin-top: 5.625rem;
+  margin-bottom: 2.1875rem;
+  max-width: 37.5rem;
+  font-size: 4rem;
+}
+
 h2{
   font-size: 4rem;
 }
@@ -72,15 +79,6 @@ h5{
   padding: 5px;
 }
 
-
-
-/*.head{
-  display: flex;
-  padding-top: 2.25rem;
-  align-items: center;
-  justify-content: space-between;
-}*/
-
 .navbar{
   position: fixed;
   left: 0;
@@ -131,54 +129,25 @@ h5{
   align-items: center;
   padding: 0 20px;
   color: #275553;
+  font-size: 1.2rem;
 }
 
 .navbar-wrap .menu > li > a:hover{
   color: white;
 }
 
-
-
-/*.nav ul{
-  display: flex;
-  list-style: none;
-  margin-right: 4rem;
-}
-
-.nav li:not(:last-child){
-  margin-right: 3.5rem;
-}
-
-.nav a{
+.header .reserve{
+  border:1px solid #275553;
+  border-radius: 5px;
+  padding: 0.625rem 2rem!important;
   text-decoration: none;
-  color: #275553;
-  font-size: 1.3rem;
 }
 
-.nav a:hover{
-  color:white;
-}
-
-.nav .reserve:hover{
+.header .reserve:hover{
   background-color: #F47648;
 }
 
-.reserve{
-  border:1px solid #275553;
-  border-radius: 5px;
-  padding: 0.625rem 2rem;
-  color:#275553;
-  text-decoration: none;
-}*/
-
-.top{
-  /*color:yellow;*/
-  margin-top: 5.625rem;
-  margin-bottom: 2.1875rem;
-  max-width: 37.5rem;
-}
-
-.date{
+.header .date{
   color:#FFFFFF ;
   font-size: 1.875rem;
   background-color: #F47648;
@@ -186,12 +155,12 @@ h5{
   padding: 0.625rem 1.5rem;
 }
 
-.date a{
+.header .date a{
   color: white;
   text-decoration: none;
 }
 
-header p{
+.header p{
   margin-top:4rem;
   font-size: 1.25rem;
   color: #FFFFFF;
@@ -199,7 +168,7 @@ header p{
   margin-bottom: 2.375rem;
 }
 
-.head__arrow{
+.header .head__arrow{
   margin-left:1.3125rem;
   width: 0.625rem;
   border: 1px solid white;
@@ -207,38 +176,35 @@ header p{
   padding: 0.6rem;
 }
 
-.head__arrow:hover{
+.header .head__arrow:hover{
   background-color: #F47648;
   cursor: pointer;
 }
 
-.wrap__timetable{
+.header .wrap__timetable{
   display: flex;
   align-items: center;
 }
 
-.wrap__timetable a{
+.header .wrap__timetable a{
   color: #FFFFFF;
   font-size: 1.25rem;
 }
 
-.icons{
+.header .icons{
   margin-top: 10.625rem;
   padding-bottom: 4.375rem;
 }
 
-.icons img{
+.header .icons img{
   cursor: pointer;
 }
 
-.insta{
+.header .insta{
   margin-left: 1.875rem;
 }
 
-.start__travel{
-  max-width: 45.5rem;
-  margin-bottom:1.6875rem;
-}
+
 
 .one__two{
   position: relative;
@@ -246,6 +212,11 @@ header p{
 
 .wrap_one__two-Info{
   display: flex;
+}
+
+.one__two .start__travel{
+  max-width: 45.5rem;
+  margin-bottom:1.6875rem;
 }
 
 .one__two .temp{
