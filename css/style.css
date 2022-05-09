@@ -8,6 +8,7 @@ h1{
   margin-bottom: 2.1875rem;
   max-width: 37.5rem;
   font-size: 4rem;
+  color: #275553;
 }
 
 h2{
@@ -41,7 +42,7 @@ h5{
   margin-right: auto;
 }
 
-.slider__header{
+.slider/*__header*/{
   position: absolute;
   top: 45%;
   right: 0;
@@ -49,12 +50,12 @@ h5{
   overflow: hidden;
 }
 
-.slider__header_list{
+.slider_list{
   list-style: none;
   display: flex;
 }
 
-.slider__header img{
+.slider img{
   width: 300px;
   height: 300px;
   border-radius: 5%;
@@ -62,16 +63,16 @@ h5{
   transform: scale(0.8);
 }
 
-.slider__header img:hover{
+.slider img:hover{
   transform: scale(1);
   transition:1s;
 }
 
-.slider__header_btn_group{
+.slider_btn_group{
   margin: 10px 0px 0px 25px;
 }
 
-.slider__header-btn_left img, .slider__header-btn_right img{
+.slider-btn_left img, .slider-btn_right img{
   width: 20px;
   height: 20px;
   border: 1px solid white;
@@ -163,9 +164,10 @@ h5{
 .header p{
   margin-top:4rem;
   font-size: 1.25rem;
-  color: #FFFFFF;
+  color: #275553;
   max-width: 24rem;
   margin-bottom: 2.375rem;
+  font-weight: bold;
 }
 
 .header .head__arrow{
@@ -204,8 +206,6 @@ h5{
   margin-left: 1.875rem;
 }
 
-
-
 .one__two{
   position: relative;
 }
@@ -235,22 +235,22 @@ h5{
   overflow: hidden;
 }
 
-#dayTwo .slider__header_btn_group,#dayThree .slider__header_btn_group,#dayFive .slider__header_btn_group,#daySeven .slider__header_btn_group{
+#dayTwo .slider_btn_group,#dayThree .slider_btn_group,#dayFive .slider_btn_group,#daySeven .slider_btn_group{
   margin-left: auto;
   width: 110px;
 }
 
-#dayTwo .slider__header_btn_group img,#dayThree .slider__header_btn_group img,#daySeven .slider__header_btn_group img{
+#dayTwo .slider_btn_group img,#dayThree .slider_btn_group img,#daySeven .slider_btn_group img{
   height: 40px;
   width: 40px;
 }
 
-#dayTwo .slider__header-btn_left img,#dayTwo .slider__header-btn_right img,#dayThree .slider__header-btn_left img,#dayThree .slider__header-btn_right img,#daySeven .slider__header-btn_left img,#daySeven .slider__header-btn_right img{
+#dayTwo .slider-btn_left img,#dayTwo .slider-btn_right img,#dayThree .slider-btn_left img,#dayThree .slider-btn_right img,#daySeven .slider-btn_left img,#daySeven .slider-btn_right img{
   border: none;
   padding: none;
 }
 
-#dayTwo .slider__header-btn_left div,#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_left div,#dayThree .slider__header-btn_right div{display: inline-block;}
+#dayTwo .slider-btn_left div,#dayTwo .slider-btn_right div,#dayThree .slider-btn_left div,#dayThree .slider-btn_right div{display: inline-block;}
 
 .one__two_dream{
   font-size: 1.5rem;
@@ -547,7 +547,7 @@ h5{
 
 #daySeven{
     position: absolute;
-    top: -55px;
+    top: -47px;
     left: -30px;
     width: 600px;
     overflow: hidden;

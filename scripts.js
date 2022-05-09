@@ -52,8 +52,8 @@ const slider = function(id) {
       }
     };
 
-    const btnLeft = parent.querySelector('.slider__header-btn_left'),
-          btnRight = parent.querySelector('.slider__header-btn_right');
+    const btnLeft = parent.querySelector('.slider-btn_left'),
+          btnRight = parent.querySelector('.slider-btn_right');
 
     if(btnLeft && btnRight){
       btnLeft.addEventListener('click',left);
