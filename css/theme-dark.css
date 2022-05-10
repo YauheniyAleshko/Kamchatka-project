@@ -12,11 +12,11 @@ body{
   display:none;
 }
 
-.nav a,h1,.header p,.camcha,.comment,.maxim,#timetable,.white,.day_two,.start__travel,.program2,h5,.card p,.day_three,.wrap__right p,.day_four,.wrap__left p,.day_seven,#participation,tbody,.head__descrip,.price__descrip ul,.dream__team h2,.capblack,.td_bold{
+.nav a,h1,.greeting p,.camcha,.comment,.maxim,#timetable,.white,.day_two,.start__travel,.program2,h5,.card p,.day_three,.wrap__right p,.day_four,.wrap__left p,.day_seven,#participation,tbody,.head__descrip,.price__descrip ul,.dream__team h2,.capblack,.td_bold{
   color:antiquewhite;
 }
 
-.header{
+.greeting{
   background: url(/images/head-foneDarktheme.jpg);
 }
 
@@ -25,12 +25,10 @@ body{
 .start__travel{margin-bottom: 3rem;}
 
 .one__two{
-  background-image:/*url(../images/oblachka_pod_gory.png),url(../images/podlogka_pod_oblachka.png),*/url(../images/gora-darkTheme.png),url(../images/plane.png),/*url(../images/cloud_054\ 29.png),url(../images/oblaka.png),*/url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
+  background-image:url(../images/gora-darkTheme.png),url(../images/plane.png),url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
   background-repeat: no-repeat;
-  background-position:/*100% 2030px,100% 2350px,*/100% 2070px,100% 500px,/*-84px 1903px,0px 1780px,*/0 580px,0 1250px,0px 1200px,-195px 280px;
+  background-position:100% 2070px,100% 500px,0 580px,0 1250px,0px 1200px,-195px 280px;
  }
-
- #dayTwo .slider__header-btn_left{}
 
  #dayTwo .slider__header-btn_left div,#dayThree .slider__header-btn_left div{
     background:url(../images/slide_btnLeft.svg);
@@ -76,7 +74,7 @@ body{
   display: none;
 }
 
-.one__the_way{
+.cards_way{
   background-color:black;
 }
 

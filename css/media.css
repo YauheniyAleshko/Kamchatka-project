@@ -1,5 +1,5 @@
 @media(min-width:2560px){
- .header{background-image:url(../images/wallpapers-mountains-10.jpg)}
+ .greeting{background-image:url(../images/wallpapers-mountains-10.jpg)}
  .container{width:73%;}
  .one__two{
   background-image:url(../images/oblachka_pod_gory.png),url(../images/gora.png),url(../images/plane.png),url(../images/cloud_054\ 29.png),url(../images/oblaka.png),url(../images/wallpapers-mountains-11.jpg),url(../images/wallpapers-mountains-3.jpg);
@@ -19,9 +19,9 @@
  .seven{
   color:#313131;
   margin-top: 303px;
-  background-image: url(../images/nizOblaka7.png),/*url(../images/levoOblaka7.png),url(../images/verh7oblaka.png),*/url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
+  background-image: url(../images/nizOblaka7.png),url(../images/ObertishOblakoviy7.png),url(../images/day7background.png);
   background-repeat: no-repeat;
-  background-position: 100% 440px,/*720px 90px,100% 60px,*/100% -170px ,100% 60px;
+  background-position: 100% 440px,100% -170px ,100% 60px;
 }
 
 .day8{background-image: url(../images/wallpapers-mountains-30.jpg);}

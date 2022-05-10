@@ -1,3 +1,5 @@
+/*Common styles for blocks are located at the end of the document*/
+
 *{
   margin: 0;
   padding: 0;
@@ -31,54 +33,17 @@ h5{
   font-size: 36px;
 }
 
-.header{
-  background-image:url(../images/head-fone.png);
-  position: relative;
-}
-
 .container{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.slider/*__header*/{
-  position: absolute;
-  top: 45%;
-  right: 0;
-  width: 600px;
-  overflow: hidden;
+.day__color{
+  color: #F47648;
 }
 
-.slider_list{
-  list-style: none;
-  display: flex;
-}
-
-.slider img{
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
-  transform-origin:bottom;
-  transform: scale(0.8);
-}
-
-.slider img:hover{
-  transform: scale(1);
-  transition:1s;
-}
-
-.slider_btn_group{
-  margin: 10px 0px 0px 25px;
-}
-
-.slider-btn_left img, .slider-btn_right img{
-  width: 20px;
-  height: 20px;
-  border: 1px solid white;
-  border-radius: 50%;
-  padding: 5px;
-}
+/*Block header*/
 
 .navbar{
   position: fixed;
@@ -148,7 +113,17 @@ h5{
   background-color: #F47648;
 }
 
-.header .date{
+/*Block greeting*/
+
+.greeting{
+  background-image:url(../images/head-fone.png);
+}
+
+.greeting .container{
+  position: relative;
+}
+
+.greeting .date{
   color:#FFFFFF ;
   font-size: 1.875rem;
   background-color: #F47648;
@@ -156,12 +131,12 @@ h5{
   padding: 0.625rem 1.5rem;
 }
 
-.header .date a{
+.greeting .date a{
   color: white;
   text-decoration: none;
 }
 
-.header p{
+.greeting p{
   margin-top:4rem;
   font-size: 1.25rem;
   color: #275553;
@@ -170,7 +145,7 @@ h5{
   font-weight: bold;
 }
 
-.header .head__arrow{
+.greeting .link__arrow{
   margin-left:1.3125rem;
   width: 0.625rem;
   border: 1px solid white;
@@ -178,33 +153,73 @@ h5{
   padding: 0.6rem;
 }
 
-.header .head__arrow:hover{
+.greeting .link__arrow:hover{
   background-color: #F47648;
   cursor: pointer;
 }
 
-.header .wrap__timetable{
+.greeting .wrap__timetable{
   display: flex;
   align-items: center;
 }
 
-.header .wrap__timetable a{
+.greeting .wrap__timetable a{
   color: #FFFFFF;
   font-size: 1.25rem;
 }
 
-.header .icons{
+.greeting .icons{
   margin-top: 10.625rem;
   padding-bottom: 4.375rem;
 }
 
-.header .icons img{
+.greeting .icons img{
   cursor: pointer;
 }
 
-.header .insta{
+.greeting .insta{
   margin-left: 1.875rem;
 }
+
+.slider, #dayOne{
+  position: absolute;
+  top: 45%;
+  right: 0;
+  width: 600px;
+  overflow: hidden;
+}
+
+.slider_list{
+  list-style: none;
+  display: flex;
+}
+
+.slider img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  transform-origin:bottom;
+  transform: scale(0.8);
+}
+
+.slider img:hover{
+  transform: scale(1);
+  transition:1s;
+}
+
+.slider_btn_group{
+  margin: 10px 0px 0px 25px;
+}
+
+.slider-btn_left img, .slider-btn_right img{
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/*Block one_two days*/
 
 .one__two{
   position: relative;
@@ -219,39 +234,6 @@ h5{
   margin-bottom:1.6875rem;
 }
 
-.one__two .temp{
-  color: rgb(201, 37, 37);
-  font-size:5vh;
-  font-weight:700;
-  margin-left: 2vw;
-  margin-top: 200px;
-}
-
-#dayTwo{
-  position: absolute;
-  top: 85%;
-  left: 0;
-  width: 600px;
-  overflow: hidden;
-}
-
-#dayTwo .slider_btn_group,#dayThree .slider_btn_group,#dayFive .slider_btn_group,#daySeven .slider_btn_group{
-  margin-left: auto;
-  width: 110px;
-}
-
-#dayTwo .slider_btn_group img,#dayThree .slider_btn_group img,#daySeven .slider_btn_group img{
-  height: 40px;
-  width: 40px;
-}
-
-#dayTwo .slider-btn_left img,#dayTwo .slider-btn_right img,#dayThree .slider-btn_left img,#dayThree .slider-btn_right img,#daySeven .slider-btn_left img,#daySeven .slider-btn_right img{
-  border: none;
-  padding: none;
-}
-
-#dayTwo .slider-btn_left div,#dayTwo .slider-btn_right div,#dayThree .slider-btn_left div,#dayThree .slider-btn_right div{display: inline-block;}
-
 .one__two_dream{
   font-size: 1.5rem;
   color: #313131;
@@ -263,6 +245,14 @@ h5{
   margin-top: 2.1875rem;
   max-width: 38.3125rem;
   font-size: 1.2rem;
+}
+
+.one__two .temp{
+  color: rgb(201, 37, 37);
+  font-size:5vh;
+  font-weight:700;
+  margin-left: 2vw;
+  margin-top: 200px;
 }
 
 .info__tour{
@@ -313,59 +303,65 @@ h5{
  background-position:100% 2030px,100% 2350px,100% 2070px,100% 500px,-84px 1903px,0px 1780px,0 580px,0 1250px,0px 1200px,-195px 280px;
 }
  
-.day_one{
+.one__two .day_one{
   margin-top: 212px;
   max-width: 458px;
 }
 
-.day__color{
-  color: #F47648;
-}
-
-.program{
+.one__two .program{
   max-width: 461px;
   margin-top: 48px;
   color:#ACACAC;
 }
 
-.program p:not(:first-child){
+.one__two .program p:not(:first-child){
   margin-top: 20px;
 }
 
-.white{
+.one__two .white{
   font-weight: 600;
   color:#FFFFFF;
 }
 
-.day_two{
+.one__two .day_two{
   max-width: 856px;
   margin-top: 300px;
   color: #313131;
   max-width: 856px;
 }
 
-.program2{
+#dayTwo{
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 600px;
+  overflow: hidden;
+}
+
+.one__two .program2{
   max-width: 548px;
   margin-top: 48px;
   color: #313131;
 }
 
-.program2 p:not(:first-child){
+.one__two .program2 p:not(:first-child){
   margin-top: 20px;
 }
 
-.day2__paragraf_group{
+.one__two .day2__paragraf_group{
   margin-top: 220px;
   max-width: 478px;
   margin-left: auto;
   padding-bottom: 50px;
 }
 
-.day2__paragraf_group p:not(:first-child){
+.one__two .day2__paragraf_group p:not(:first-child){
   margin-top: 30px;
 }
 
-.one__the_way{
+/*Block cards_way*/
+
+.cards_way{
   background-color: #F1F1F1;
   padding: 80px 0;
 }
@@ -407,10 +403,13 @@ h5{
   line-height: 24px;
 }
 
-.day_three{
-  color: #313131;
-  margin-bottom: 48px;
-}  
+/*Block _3rd__to_7th*/
+
+._3rd__to_7th{
+  background-image: url(../images/oblakaSevenverh.png),url(../images/podlogka_podOblakaSevenVerh.png),url(../images/skaly_niz.png),url(../images/skaly_verh.png),url(../images/skalyDay5.png),url(../images/black_fone3day.png),url(../images/day3niz.png),url(../images/gory-den_three.png);
+  background-repeat: no-repeat;
+  background-position:0 2770px,0 2870px,0 1900px,0 1400px,0 1400px,0 780px ,0 611px,0px 270px;
+}
 
 .wrapper__days{
   display: flex;
@@ -418,12 +417,8 @@ h5{
   justify-content: space-between;
 }
 
-#dayThree{
-  position: absolute;
-  top: 0%;
-  left: -30px;
-  width: 600px;
-  overflow: hidden;
+.wrapper__days, .wrapper__days_reserv .slide{
+  position: relative;
 }
 
 .wrap__right{
@@ -439,6 +434,19 @@ h5{
   margin-bottom: 40px;
 }
 
+.day_three{
+  color: #313131;
+  margin-bottom: 48px;
+}  
+
+#dayThree{
+  position: absolute;
+  top: 0%;
+  left: -30px;
+  width: 600px;
+  overflow: hidden;
+}
+
 .wrapper__days_reserv{
   margin-top: 390px;
   display: flex;
@@ -450,12 +458,6 @@ h5{
 .wrap__left{
   max-width: 533px;
   margin-left: 55px;
-}
-
-._3rd__to_7th{
-  background-image: url(../images/oblakaSevenverh.png),url(../images/podlogka_podOblakaSevenVerh.png),url(../images/skaly_niz.png),url(../images/skaly_verh.png),url(../images/skalyDay5.png),url(../images/black_fone3day.png),url(../images/day3niz.png),url(../images/gory-den_three.png);
-  background-repeat: no-repeat;
-  background-position:0 2770px,0 2870px,0 1900px,0 1400px,0 1400px,0 780px ,0 611px,0px 270px;
 }
 
 .day_four{
@@ -477,7 +479,6 @@ h5{
   width: 600px;
   overflow: hidden;
 }
-
 
 .five p{
   color:white;
@@ -547,14 +548,15 @@ h5{
 
 #daySeven{
     position: absolute;
-    top: -47px;
-    left: -30px;
+    top: 506px;
+    left: 0px;
     width: 600px;
     overflow: hidden;
 }
 
 .days2{
   border-collapse: collapse;
+  margin-top: 470px;
 }
 
 .days2 caption{
@@ -563,6 +565,8 @@ h5{
   margin-bottom: 30px;
   max-width: 478px;
 }
+
+/*Block day-8*/
 
 .day8 {
   height: 718px;
@@ -582,9 +586,10 @@ h5{
   color:#FFFFFF;
 }
 
+/*Block participation*/
+
 .participation .borderBot{
   border-bottom: 4px solid #212121;
-  
 }
 
 .participation h2{
@@ -628,7 +633,6 @@ h5{
   
 }
 
-
 .price td{
   padding: 35px 0;
   width:50%;
@@ -648,8 +652,6 @@ h5{
   margin-top: 70px;
   padding-bottom: 135px;
 }
-
-
 
 .price__descrip_item ul > li{
   height: 48px;
@@ -672,11 +674,11 @@ h5{
   margin-left: 10px;
 }
 
-
-
 .price__descrip_item{
   width: 50%;
 }
+
+/*Block application*/
 
 .onlineApplication__wrap{
   margin-top: 96px;
@@ -800,6 +802,8 @@ h5{
   margin-top: 0.5rem;
 }
 
+/*Block dream-team*/
+
 .dream__team h2{
   max-width: 950px;
   margin-top: 120px;
@@ -832,6 +836,10 @@ h5{
 .dream__team_card:not(:last-child){
   margin-right: 96px;
 }
+
+.dream__team p,.dream__team_card span{color: black;}
+
+/*Block footer*/
 
 footer{
   background-color:#212121;
@@ -912,9 +920,6 @@ footer ul li:not(:last-child){
   color: #FFFFFF;
 }
 
-  
-
-
 .three_wrap{
   display: flex;
 }
@@ -922,12 +927,6 @@ footer ul li:not(:last-child){
 .see_video{
   margin-bottom: 6px;
 }
-
-/*.see_video{
-  color: #FFFFFF;
-  vertical-align: top;
-  margin-left: 18px;
-}*/
 
 .socseti_logo{
   margin-right: 20px;
@@ -1049,4 +1048,23 @@ footer ul li:not(:last-child){
 }
 
 
-.dream__team p,.dream__team_card span{color: black;}
+
+
+/*Common styles for blocks*/
+#dayTwo .slider_btn_group,#dayThree .slider_btn_group,#dayFive .slider_btn_group,#daySeven .slider_btn_group{
+  margin-left: auto;
+  width: 110px;
+}
+
+#dayTwo .slider_btn_group img,#dayThree .slider_btn_group img,#daySeven .slider_btn_group img{
+  height: 40px;
+  width: 40px;
+}
+
+#dayTwo .slider-btn_left img,#dayTwo .slider-btn_right img,#dayThree .slider-btn_left img,#dayThree .slider-btn_right img,#daySeven .slider-btn_left img,#daySeven .slider-btn_right img{
+  border: none;
+  padding: none;
+}
+
+#dayTwo .slider-btn_left div,#dayTwo .slider-btn_right div,#dayThree .slider-btn_left div,#dayThree .slider-btn_right div{display: inline-block;}
+
