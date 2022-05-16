@@ -12,7 +12,7 @@ body{
   display:none;
 }
 
-.nav a,h1,.greeting p,.camcha,.comment,.maxim,#timetable,.white,.day_two,.start__travel,.program2,h5,.card p,.day_three,.wrap__right p,.day_four,.wrap__left p,.day_seven,#participation,tbody,.head__descrip,.price__descrip ul,.dream__team h2,.capblack,.td_bold{
+.nav a,h1,.greeting p,.camcha,.comment,.maxim,#timetable,.white,.one__two .day_two,.start__travel,.one__two .program2,.one__two .day2__paragraf_group,h5,.card p,.day_three,.wrap__right p,.day_four,.wrap__left p,.day_seven,#participation,tbody,.head__descrip,.price__descrip ul,.dream__team h2,.capblack,.td_bold{
   color:antiquewhite;
 }
 
@@ -22,7 +22,7 @@ body{
 
 .one__two{background-color: black;opacity: 0.9;}
 
-.start__travel{margin-bottom: 3rem;}
+.one__two .start__travel{margin-bottom: 3rem;}
 
 .one__two{
   background-image:url(../images/gora-darkTheme.png),url(../images/plane.png),url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
@@ -30,7 +30,7 @@ body{
   background-position:100% 2070px,100% 500px,0 580px,0 1250px,0px 1200px,-195px 280px;
  }
 
- #dayTwo .slider__header-btn_left div,#dayThree .slider__header-btn_left div{
+#dayTwo .slider-btn_left div, #dayThree .slider-btn_left div{
     background:url(../images/slide_btnLeft.svg);
     background-repeat: no-repeat;
     display: inline-block;
@@ -44,16 +44,16 @@ body{
     transform: scale(0.8);
   }
 
-  #dayTwo .slider__header-btn_left div,#dayThree .slider__header-btn_left div:hover{
+#dayTwo .slider-btn_left div, #dayThree .slider-btn_left div:hover{
     transform: scale(1);
     transition: 1s;
   }
 
- #dayTwo .slider__header-btn_left img,#dayThree .slider__header-btn_left img {
+#dayTwo .slider-btn_left img, #dayThree .slider-btn_left img {
   display: none;
 }
 
-#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_right div{
+#dayTwo .slider-btn_right div, #dayThree .slider-btn_right div{
   background:url(../images/slider_btnRight.svg);
   background-repeat: no-repeat;
   display: inline-block;
@@ -66,11 +66,11 @@ body{
   transform-origin: bottom;
   transform: scale(0.8);
 }
-#dayTwo .slider__header-btn_right div,#dayThree .slider__header-btn_right div:hover{
+#dayTwo .slider-btn_right div ,#dayThree .slider-btn_right div:hover{
   transform: scale(1);
   transition: 1s;
 }
-#dayTwo .slider__header-btn_right img,#dayThree .slider__header-btn_right img {
+#dayTwo .slider-btn_right img,#dayThree .slider-btn_right img {
   display: none;
 }
 
@@ -107,4 +107,48 @@ body{
 }
 
 .dream__team p,.dream__team_card span{color: white;}
+
+@media(max-width:768px){
+  .bg780 p{
+    color: black;
+  }
+
+  .onlineApplication{
+    background-color: white;
+  }
+
+  .participation .borderBot{
+    border-bottom: none;
+  }
+
+  .onlineApplication__wrap h5{
+    color: black;
+  }
+}
+
+@media(max-width:425px){
+
+  .one__two .start__travel{
+    color: black;
+  }
+  .one__two .program{
+    color:#F47648;
+  }
+
+  .one__two{
+    background-color: aliceblue;
+  }
+
+  .one__two .day_two{
+    color: grey;
+  }
+
+  .one__two .program2{
+    color: #F47648;
+  }
+
+  .one__two .day2__paragraf_group p{
+    color:#F47648 ;
+  }
+}
 

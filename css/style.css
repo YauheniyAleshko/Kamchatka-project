@@ -37,6 +37,7 @@ h5{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .day__color{
@@ -221,10 +222,6 @@ h5{
 
 /*Block one_two days*/
 
-.one__two{
-  position: relative;
-}
-
 .wrap_one__two-Info{
   display: flex;
 }
@@ -333,7 +330,7 @@ h5{
 #dayTwo{
   position: absolute;
   top: 85%;
-  left: 0;
+  left: -25px;
   width: 600px;
   overflow: hidden;
 }
@@ -369,10 +366,12 @@ h5{
 .cards__route{
   display: flex;
   margin-top: 48px;
+  justify-content: space-between;
 }
 
 .card{
-  max-width:calc(25% - 32px);
+  /*max-width:calc(25% - 32px);*/
+  max-width: calc(25% - 25px);
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
@@ -386,9 +385,9 @@ h5{
   width: 100%;
 }
 
-.card:not(:last-child){
+/*.card:not(:last-child){
   margin-right: 32px;
-}
+}*/
 
 .card__head{
   font-size: 18px;
@@ -556,7 +555,7 @@ h5{
 
 .days2{
   border-collapse: collapse;
-  margin-top: 470px;
+  margin-top: 500px;
 }
 
 .days2 caption{
@@ -630,7 +629,6 @@ h5{
 
 .price tr{
   border-bottom: 1px solid grey;
-  
 }
 
 .price td{
@@ -831,10 +829,7 @@ h5{
 .dream__team_cards{
   display: flex;
   margin-bottom: 120px;
-}
-
-.dream__team_card:not(:last-child){
-  margin-right: 96px;
+  justify-content: space-between;
 }
 
 .dream__team p,.dream__team_card span{color: black;}
@@ -874,6 +869,10 @@ footer ul li:not(:last-child){
   text-decoration: none; 
   border-radius: 5px; 
   border: 1px solid #FFFFFF;
+ }
+
+ .btn:hover{
+   background-color: #F47648;
  }
 
  .instagram__images{
@@ -937,7 +936,7 @@ footer ul li:not(:last-child){
 }
 
 .four__foot{
-  margin-left: 40px;
+  padding: 0 35px;
   margin-right: auto;
 }
 
@@ -964,7 +963,6 @@ footer ul li:not(:last-child){
   margin-top: 30px;
   display: inline-block;
 }
-
 
 /*Мodal for slaider*/
 
@@ -998,7 +996,6 @@ footer ul li:not(:last-child){
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  
 }
 
 .modal_inner{
@@ -1046,9 +1043,6 @@ footer ul li:not(:last-child){
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(39,38,40,0.4);
 }
-
-
-
 
 /*Common styles for blocks*/
 #dayTwo .slider_btn_group,#dayThree .slider_btn_group,#dayFive .slider_btn_group,#daySeven .slider_btn_group{

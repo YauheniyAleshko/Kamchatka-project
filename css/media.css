@@ -14,8 +14,9 @@
 
  .one__two_dream,.one__two_route{font-weight: bold;}
  .program{color: white;font-weight: bold;}
+ 
  ._3rd__to_7th{background: linear-gradient(white, black,white);}
- #daySeven{top: -97px;}
+ #daySeven{display: none;}
  .seven{
   color:#313131;
   margin-top: 303px;
@@ -26,7 +27,8 @@
 
 .day8{background-image: url(../images/wallpapers-mountains-30.jpg);}
 .onlineApplication{background: linear-gradient(white, black,white);}
-.dream__team_cards{display: flex;justify-content: space-around;}
+.dream__team_cards{display: flex;justify-content: space-between;}
+.link-insta{display: block!important;}
 
 }
 
@@ -114,8 +116,433 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /*body.noscroll{
-    overflow: hidden;
-  }*/
+  #dayOne,#dayTwo,#dayThree,#dayFour,#dayFive,#daySix,#daySeven{
+    width: 330px;
+  }
+
+  .seven .wrap__left{
+    max-width: none;
+  }
+
+  .seven{
+    display: inline-block;
+    background-image: none;
+    position: relative;
+  }
+
+  #daySeven{
+    top: 400px;
+  }
+
+  .one__two .program2{
+    max-width: 480px;
+    margin-top: 10px;
+  }
+
+  .cards__route{
+    display: inline;
+  }
+
+  .card{
+    display: inline-block;
+    max-width: calc(45% - 20px);
+    margin: 20px 25px;
+  }
+
+  .days2{
+    margin-top: 0;
+    max-width: 500px;
+    margin-left: auto;
+  }
+
+  .price{
+    width:500px ;
+  }
+  
+  .dream__team_card:not(:last-child){
+    margin-right: auto;
+  }
+
+  .dream__team_card img{
+    width: 250px;
+  }
+
+  .socialcolor{
+    display: block;
+  }
+
+  .one__foot{
+    padding-right: 5px;
+  }
+
+  .two__foot,.three__foot,.four__foot{
+    padding: 0 20px;
+  }
+
+  .btn{
+    padding: 10px 15px;
+  }
+}
+
+@media(max-width:768px){
+
+  #slider-head{
+    width: 330px;
+  }
+
+  .one__two{
+    background-image:url(../images/oblachka_pod_gory.png),url(../images/podlogka_pod_oblachka.png),url(../images/gora.png),url(../images/cloud_054\ 29.png),url(../images/oblaka.png),url(../images/podlogka_pod_one_two.png),url(../images/Слой\ 1.png),url(../images/shishki.png),url(../images/0ne_two-fone.png);
+    background-repeat: no-repeat;
+    background-position:100% 2030px,100% 2350px,250% 2070px,-84px 1903px,0px 1780px,0 580px,0 1250px,0px 1200px,-195px 280px;
+   }
+
+   .info__tour{
+     margin-top: 3rem;
+   }
+
+   .camcha{
+     margin-top: 200px;
+   }
+
+   #dayOne,#dayFour{
+    width: 270px;
+  }
+
+  .one__two .program{
+    max-width: 440px;
+  }
+
+  .one__two .day2__paragraf_group{
+    margin-top: 280px;
+  }
+
+  .bg780 p{
+    background-color: white;
+  }
+
+  #dayTwo,#dayThree,#dayFive,#daySix,#daySeven{
+    display: none;
+  }
+
+  .card{
+    max-width: 600px;
+    margin: 20px 45px;
+  }
+
+  #dayFour{
+    top:310px;
+  }
+
+  .price{
+    max-width: 450px;
+  }
+
+  .onlineApplication__wrap{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .socialNetwork{
+    display: none;
+  }
+  h5{
+    margin-bottom: 30px;
+  }
+  .onlineApplication__foot{
+    margin-left: 10px;
+  }
+
+  .onlineApplication__foot form{
+    margin-top: 20px;
+  }
+
+  .onlineApplication{
+    background-image:url(../images/onlineApplication__ugol.png),url(../images/onlineApplication__top.png),url(../images/onlineApplication_bot.png),url(../images/onlineApplication.png);
+    background-repeat: no-repeat;
+    background-position:0 370px,100% 350px,bottom,bottom;
+  }
+
+  .dream__team_card img {
+    max-width: 200px;
+  }
+
+  .dream__team h2{
+    font-size: 3rem;
+  }
+
+  .two__foot{
+    display: none;
+  }
+
+  .three__foot{
+    padding: 0 15px;
+  }
+}
+
+@media(max-width:425px){
+
+  h1,h2{
+    font-size: 2.5rem;
+  }
+
+  .theme{
+    top:33px;
+    padding: 5px;
+  }
+
+  .greeting  .date{
+    font-size: 1.5rem;
+  }
+
+  #slider-head,#dayOne,#dayFour{
+    display: none;
+  }
+
+  .greeting p{
+    margin-top: 3rem;
+  }
+
+  .greeting p{
+    margin-bottom: 2rem;
+  }
+
+  h3{
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+
+  .wrap_one__two-Info{
+    display: block;
+  }
+
+  .one__two .temp,.send{
+    margin-top:40px;
+  }
+
+  .info__tour{
+    display: block;
+  }
+
+  .info__group:not(:last-child){
+    margin-right: auto;
+  }
+
+  .info__group{
+    max-width: 270px;
+    margin: 30px auto;
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .camcha,.one__two .day_one,.one__two .day_two,.wrapper__days_reserv{
+    margin-top: 100px;
+  }
+
+  .one__two .white{
+    color: #F47648;
+  }
+
+  .one__two .day2__paragraf_group{
+    margin: 20px 0;
+  }
+
+  .cards_way{
+    padding: 20px 0px;
+  }
+
+  h5{
+    font-size: 2rem;
+  }
+
+  .day_three,.day_four h4,.wrap__left h4{
+    font-size: 2.3rem;
+  }
+
+  .wrap__right{
+    margin-right: 0;
+  }
+
+  .wrap__left,.days{
+    margin-left: 0;
+  }
+
+  .days,.days2,.participation h2{
+    margin-top: 100px;
+  }
+
+  .seven{
+    margin-top: 250px;
+  }
+
+  .day8{
+    height: 500px;
+  }
+
+  .participation__wrap,.price__descrip{
+    display: block;
+  }
+
+  .price{
+    max-width: 380px;
+  }
+
+  .price__descrip_item{
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .price__descrip{
+    padding-bottom: 30px;
+  }
+
+  .top_field{
+    display: block;
+  }
+
+  .width115{
+    width: 115px;
+  }
+
+  .onlineApplication__foot,.dream__team h2{
+    margin-top: 50px;
+  }
+
+  .und2{
+    width: 70%;
+  }
+
+  .dream__team_cards{
+    display: block;
+  }
+
+  .dream__team_card img{
+    width: 385px;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .dream__team p{
+    margin-bottom: 30px;
+  }
+
+  .socialcolor{
+    display: inline;
+  }
+
+  .inwrap__footer{
+    display: block;
+  }
+
+  .one__foot,.two__foot,.three__foot{
+    border-right: none;
+  }
+
+  .one__foot{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .four__foot{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .worktime{
+    display: block;
+  }
+
+}
+
+@media(max-width:375px){
+
+  .theme{
+    display: none;
+  }
+
+  .greeting .date{
+    font-size: 1.2rem;
+  }
+
+  .greeting .icons{
+    margin-top: 50px;
+  }
+
+  .start__travel{
+    padding-top: 20px;
+  }
+
+  .camcha, .one__two .day_one, .one__two .day_two, .wrapper__days_reserv{
+    margin-top: 40px;
+  }
+
+  h4,h5,.day_three,.wrap__left h4{
+    font-size: 30px;
+  }
+
+  .card{
+    margin: 20px 0;
+  }
+
+  .five{
+    margin-top: 50px;
+  }
+
+  .wrapper__days seven .wrap__left{
+    margin-top: 50px;
+  }
+
+  .day_seven{
+    color: whitesmoke;
+  }
+
+  .seven{
+    color: #F47648;
+  }
+
+  .price{
+    max-width: 330px;
+  }
+
+  .width200{
+    width: 200px;
+  }
+
+  .dream__team_card img{
+    width: 340px;
+  }
+
+}
+
+@media(max-width:320px){
+
+  h1,h2{
+    font-size: 2rem;
+  }
+
+  .start__travel{
+    font-size: 1.5rem;
+  }
+
+  .first,.td_bold{
+    padding-right: 20px;
+  }
+
+  .seven{
+    margin-top: 30px;
+  }
+
+  .price{
+    max-width: 290px;
+  } 
+
+  .top_field{
+    max-width: 250px;
+  }
+
+  .dream__team_card img{
+    width: 290px;
+  }
 }
  

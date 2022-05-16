@@ -1,65 +1,56 @@
 const slider = function(id) {
-    let parent = document.querySelectorAll('#' + id);
-
-    if(!parent) return;
-    parent = parent[0];
-
-    const list = parent.querySelector('ul');
-
-    if(!list) return;
-
-    const items = list.querySelectorAll('li');
-
-    if(items.length < 2) return;
-
-    const firstItem = items[0],
-      stylesFirstItem = window.getComputedStyle(firstItem);
-      mlFirstItem = parseInt(stylesFirstItem.marginLeft),
-      mrFirstItem = parseInt(stylesFirstItem.marginRight);
-
-    let widthFirstItem = parseInt(stylesFirstItem.width);  
-
-    widthFirstItem = widthFirstItem +mlFirstItem + mrFirstItem;
-
-    let stop = Math.floor(list.offsetWidth / widthFirstItem)*widthFirstItem;
-
     
+  let parent = document.querySelectorAll('#' + id);
 
+  if(!parent) return;
+  parent = parent[0];
 
-    const left = function() {
-      let ml = Math.abs(parseInt(firstItem.style.marginLeft));
+  const list = parent.querySelector('ul');
 
-      /*console.log(ml)*/
+  if(!list) return;
 
-      if(!ml) ml = 0;
+  const items = list.querySelectorAll('li');
 
-      
-      ml -= widthFirstItem;
-      firstItem.style.marginLeft = `-${ml}px`;
-      
-    };
+  if(items.length < 2) return;
 
-    const right = function() {
-      let ml = Math.abs(parseInt(firstItem.style.marginLeft));
+  const firstItem = items[0],
+    stylesFirstItem = window.getComputedStyle(firstItem);
+    mlFirstItem = parseInt(stylesFirstItem.marginLeft),
+    mrFirstItem = parseInt(stylesFirstItem.marginRight);
 
-      /*console.log(ml)*/
+  let widthFirstItem = parseInt(stylesFirstItem.width);  
 
-      if(!ml) ml = 0;
+  widthFirstItem = widthFirstItem +mlFirstItem + mrFirstItem;
 
-      if(ml <= stop) {
-          ml += widthFirstItem;
-          firstItem.style.marginLeft = `-${ml}px`;
-      }
-    };
+  let stop = Math.floor(list.offsetWidth / widthFirstItem)*widthFirstItem;
 
-    const btnLeft = parent.querySelector('.slider-btn_left'),
-          btnRight = parent.querySelector('.slider-btn_right');
+  const left = function() {
+    let ml = Math.abs(parseInt(firstItem.style.marginLeft));
+    /*console.log(ml)*/
+    if(!ml) ml = 0;
 
-    if(btnLeft && btnRight){
-      btnLeft.addEventListener('click',left);
-      btnRight.addEventListener('click',right);  
+    ml -= widthFirstItem;
+    firstItem.style.marginLeft = `-${ml}px`;
+  };
+
+  const right = function() {
+    let ml = Math.abs(parseInt(firstItem.style.marginLeft));
+    /*console.log(ml)*/
+    if(!ml) ml = 0;
+
+    if(ml <= stop) {
+        ml += widthFirstItem;
+        firstItem.style.marginLeft = `-${ml}px`;
     }
+  };
 
+  const btnLeft = parent.querySelector('.slider-btn_left'),
+        btnRight = parent.querySelector('.slider-btn_right');
+
+  if(btnLeft && btnRight){
+    btnLeft.addEventListener('click',left);
+    btnRight.addEventListener('click',right);  
+  }
 };
 
 slider('slider-head');
@@ -86,16 +77,16 @@ for(let i = 0; i < btns.length;i++){
 }
 
 const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
-console.log(menuLinks);
+//console.log(menuLinks);
 if (menuLinks.length > 0){
   menuLinks.forEach(menuLink =>{
     menuLink.addEventListener("click",onMenuLinkClick);
   });
-
+ 
   function onMenuLinkClick(e){
     const menuLink = e.target;
-    console.log(menuLink.dataset.goto)
-    console.log(menuLink)
+    //console.log(menuLink.dataset.goto)
+    //console.log(menuLink)
     if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue = gotoBlock.getBoundingClientRect().top +/* window.*/pageYOffset - document.querySelector('.navbar').offsetHeight; 
@@ -113,6 +104,21 @@ if (menuLinks.length > 0){
       e.preventDefault();
     }    
   }
+}
+
+const hamb = document.querySelector('#hamb');
+const popup = document.querySelector('#popup');
+//const menu = document.querySelector('#menu').cloneNode(1);
+const body = document.body;
+
+hamb.addEventListener('click',hambHandler);
+
+function hambHandler(e){
+  e.preventDefault();
+  popup.classList.toggle("open");
+  hamb.classList.toggle("active");
+  body.classList.toggle('noscroll');
+  //renderPopup();
 }
 
 
@@ -133,8 +139,6 @@ minusButton.addEventListener('click',function(event){
     countInput.value --;
   }
 });
-
-
 
 let changeThemeButtons = document.querySelectorAll('.changeTheme');
 
@@ -173,21 +177,7 @@ request.addEventListener('readystatechange',function() {
   }
 });
 
-const hamb = document.querySelector('#hamb');
-const popup = document.querySelector('#popup');
-//const menu = document.querySelector('#menu').cloneNode(1);
-const body = document.body;
 
-
-hamb.addEventListener('click',hambHandler);
-
-function hambHandler(e){
-  e.preventDefault();
-  popup.classList.toggle("open");
-  hamb.classList.toggle("active");
-  body.classList.toggle('noscroll');
-  //renderPopup();
-}
 
 /*function renderPopup(){
   popup.appendChild(menu); 
